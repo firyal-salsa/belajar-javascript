@@ -8,7 +8,7 @@ const name = [
 ]
 
 let findRepeatName = (name)=>{
-    if(Array == undefined){
+    if(name.length == 0){
         console.log('array tidak boleh kosong')
     }else{
         return name.filter((s => v => s.has(v) || !s.add(v))(new Set)).splice(' ',1).toString()
