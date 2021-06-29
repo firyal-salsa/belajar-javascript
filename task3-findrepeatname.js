@@ -11,7 +11,7 @@ let findRepeatName = (name)=>{
     if(Array == undefined){
         console.log('array tidak boleh kosong')
     }else{
-        return name.filter((s => v => s.has(v) || !s.add(v))(new Set)).splice(' ',1)
+        return name.filter((s => v => s.has(v) || !s.add(v))(new Set)).splice(' ',1).toString()
     }
 }
 
