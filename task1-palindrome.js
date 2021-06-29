@@ -1,8 +1,6 @@
-const clean = (kata) => kata.toLowerCase().replace(/[\W_]/g, '')
-const palindrom = (kata) => {
-    const cleanStr = clean(kata);
-    return cleanStr.split('').every((c,i) => c == cleanStr[cleanStr.length - 1 - i])
+let palindrom = (kata) => {
+    let syarat = kata.toLowerCase().replace(/[\W_]/g, '')
+    return syarat.split('').every((elemen,index) => elemen == syarat[kata.length - 1 - index]) === true? 'palindrom':'bukan palindrom'
 }
 
-console.log(palindrom('malam'))
-console.log(palindrom('iyal'))
+console.log(palindrom('kapak'))
